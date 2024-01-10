@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Mendi Assignment</string>
+    <string name="cyclic_sighing">Cyclic Sighing</string>
+    <string name="sudarshan_kriya">Sudarshan Kriya</string>
+    <string name="cyclic_sighing_description">One breathing cycle: \n3s inhale –– 1s pause –– 6s exhale</string>
+    <string name="sudarshan_kriya_description">One breathing cycle: \n4s inhale –– 2s pause –– 6s exhale –– 2s pause</string>
+    <string name="set_count">%1$s Set</string>
+    <string name="set_time">%1$s MIN %2$s SEC</string>
+    <string name="btn_lets_go">Let\'s Go</string>
 </resources>

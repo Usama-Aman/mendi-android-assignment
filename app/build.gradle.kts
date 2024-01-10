@@ -1,6 +1,8 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("kotlin-kapt")
+    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -15,6 +17,11 @@ android {
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildFeatures{
+        //noinspection DataBindingWithoutKapt
+        dataBinding = true
     }
 
     buildTypes {
@@ -41,4 +48,23 @@ dependencies {
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
+
+    // Activity
+    val activityVersion = "1.8.2"
+    val fragmentVersion = "1.6.2"
+    implementation("androidx.activity:activity-ktx:$activityVersion")
+    implementation("androidx.fragment:fragment-ktx:$fragmentVersion")
+
+    // Lifecycle
+    val lifecycleVersion = "2.7.0"
+    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$lifecycleVersion")
+    implementation("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycleVersion")
+
+    val dIVersion = "2.50"
+    implementation("com.google.dagger:hilt-android:$dIVersion")
+    kapt("com.google.dagger:hilt-android-compiler:$dIVersion")
+}
+
+kapt {
+    correctErrorTypes = true
 }

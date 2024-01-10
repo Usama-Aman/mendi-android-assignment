@@ -2,4 +2,29 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+
+
+    <color name="purple10">#c88fa0</color>
+    <color name="purple20">#c78da0</color>
+    <color name="purple30">#c388a5</color>
+    <color name="purple40">#b982ae</color>
+    <color name="purple50">#b07db3</color>
+    <color name="purple60">#ab78b8</color>
+    <color name="purple70">#9b6eb4</color>
+    <color name="purple80">#8d69b4</color>
+    <color name="purple90">#8d69b4</color>
+    <color name="purple100">#8264b4</color>
+
+    <color name="homeBackgroundColor">#f9f5ef</color>
+    <color name="sliderColor">#bab8b4</color>
+    <color name="mendiColor">#293440</color>
+
+    <color name="lightGreyTextColor">#bbb7b2</color>
+    <color name="darkGreyTextColor">#908b86</color>
+
+
+
+
+
 </resources>
